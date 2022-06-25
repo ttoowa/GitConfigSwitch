@@ -2,7 +2,7 @@
 ![Language badge](https://i.imgur.com/LUHwEU7.png)ㅤ![OS badge](https://i.imgur.com/MbF1zsp.png)ㅤ![State badge](https://imgur.com/G4YiiaG.png)
 
 ## 개요
-여러 .gitconfig 파일을 swtich해주는 유틸리티 소프트웨어입니다.
+여러 .gitconfig 파일을 switch해주는 유틸리티 소프트웨어입니다.
 
 ## 사용법
 ### Step 1. (프로파일 세팅)
