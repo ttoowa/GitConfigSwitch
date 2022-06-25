@@ -3,17 +3,27 @@
 
 var userDir = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
 
-Console.WriteLine("Profile list : ");
-var configProfiles = Directory.GetFiles(userDir, ".gitconfig@*");
-foreach (var configProfile in configProfiles) {
-    var profileName = configProfile.Split("@")[1];
-
-    Console.WriteLine($"    @{Path.GetFileName(profileName)}");
+string targetProfileName = null;
+if (args.Length > 0) {
+    targetProfileName = args[0].Trim();
 }
 
-Console.WriteLine("─────────────────────────────────");
-Console.WriteLine("Type to target profile to swtich : ");
-var targetProfileName = Console.ReadLine().Trim();
+var configProfiles = Directory.GetFiles(userDir, ".gitconfig@*");
+if (string.IsNullOrEmpty(targetProfileName)) {
+    Console.WriteLine("Profile list : ");
+    foreach (var configProfile in configProfiles) {
+        var profileName = configProfile.Split("@")[1];
+
+        Console.WriteLine($"    @{Path.GetFileName(profileName)}");
+    }
+
+
+    Console.WriteLine("─────────────────────────────────");
+    Console.WriteLine("Type to target profile to swtich : ");
+    targetProfileName = Console.ReadLine().Trim();
+    Console.WriteLine("─────────────────────────────────");
+}
+
 if (!string.IsNullOrEmpty(targetProfileName) && targetProfileName[0] == '@') {
     targetProfileName = targetProfileName.Substring(1);
 }
