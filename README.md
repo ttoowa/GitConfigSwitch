@@ -8,20 +8,18 @@
 ### Step 1. (프로파일 세팅)
 > 아래와 같이 여러 .gitconfig 프로파일을 배치합니다.
 > - %userprofile%/.gitconfig@UserA
-> - %userprofile%/.gitconfig@UserB
-> 
-> .gitconfig@UserA
->  ```
+> ```
 >  [user]
 >   name = UserA  
 >   email = user_a@gmail.com
 >  ```
-> .gitconfig@userB 
->  ```
+> - %userprofile%/.gitconfig@UserB
+> ```
 >  [user]
 >   name = UserB  
 >   email = user_b@gmail.com
 >  ```
+
 
 ### Step 2. (프로파일 전환)
 > `GitConfigSwitch`를 실행하면 배치한 프로파일이 리스트로 출력됩니다.   
