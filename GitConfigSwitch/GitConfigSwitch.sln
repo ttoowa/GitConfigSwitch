@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitConfigSwitcher", "GitConfigSwitcher\GitConfigSwitcher.csproj", "{B9865EDB-7841-4003-AC06-6426DA4E9362}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitConfigSwitch", "GitConfigSwitch\GitConfigSwitch.csproj", "{B9865EDB-7841-4003-AC06-6426DA4E9362}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

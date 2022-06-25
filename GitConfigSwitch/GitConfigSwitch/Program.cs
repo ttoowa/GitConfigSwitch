@@ -31,10 +31,8 @@ foreach (var configProfile in configProfiles) {
             Console.WriteLine($"Switching failed because of : {ex}");
         }
 
-        Console.ReadLine();
         return;
     }
 }
 
 Console.WriteLine($"Not found profile '${targetProfileName}'");
-Console.ReadLine();
